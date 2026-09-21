@@ -79,7 +79,15 @@ padding:17px 18px;box-shadow:0 15px 50px rgba(255,214,0,.15)}
 .btn.secondary{background:#202020;color:#fff;border:1px solid #383838}
 .footer{padding:28px 18px 40px;text-align:center;color:#777;font-size:11px}
 .legend{margin-top:10px;color:#888;font-size:11px;line-height:1.5}
-@media(max-width:650px){
+.stats-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.stat{background:#121212;border:1px solid #292929;border-radius:16px;padding:14px 12px;text-align:center}
+.stat span{display:block;color:#8f8f8f;font-size:9px;letter-spacing:.12em;font-weight:800;margin-bottom:6px}
+.stat strong{display:block;color:var(--yellow);font-size:18px}
+.next-match{margin-top:12px;background:linear-gradient(180deg,#171717,#111);border:1px solid #303030;border-radius:18px;padding:18px}
+.next-match .label{color:var(--yellow);font-size:10px;letter-spacing:.18em;font-weight:900;margin-bottom:7px}
+.next-match h3{margin:0 0 6px;font-size:20px}
+.next-match p{margin:0;color:#b9b9b9;font-size:13px;line-height:1.5}
+@media(max-width:650px){.stats-strip{grid-template-columns:1fr 1fr}
   .hero-bottom{display:block} .badge{display:inline-block;margin-top:12px}
   .match-grid{grid-template-columns:1fr 72px 1fr;gap:7px} .team{font-size:12px} .score{font-size:13px}
   .qualifier{grid-template-columns:1fr 1fr} .sharebox{grid-template-columns:1fr} .share-actions{justify-content:flex-start}
@@ -90,7 +98,7 @@ padding:17px 18px;box-shadow:0 15px 50px rgba(255,214,0,.15)}
 <div class="shell">
   <header class="hero">
     <div class="brand">
-      <img class="logo" src="assets/sportup-logo.jpg" alt="Sport Up Padel">
+      <img class="logo" src="sportup-logo.jpg" alt="Sport Up Padel">
       <div class="brand-copy">
         <small>Sport Up Padel Castegnato</small>
         <h1><span>PADEL</span> LUNCH<br>CHALLENGE 2026</h1>
@@ -101,6 +109,15 @@ padding:17px 18px;box-shadow:0 15px 50px rgba(255,214,0,.15)}
       <div class="badge">TOP 10 → FINALI</div>
     </div>
   </header>
+
+  <section class="section" style="padding-top:14px;padding-bottom:0">
+    <div class="stats-strip">
+      <div class="stat"><span>ULTIMO AGGIORNAMENTO</span><strong>21 SET 2026</strong></div>
+      <div class="stat"><span>PARTITE GIOCATE</span><strong>7</strong></div>
+      <div class="stat"><span>QUALIFICAZIONE</span><strong>TOP 10</strong></div>
+      <div class="stat"><span>MINIMO PARTITE</span><strong>8</strong></div>
+    </div>
+  </section>
 
   <nav class="nav">
     <a href="#classifica">CLASSIFICA</a>
@@ -240,6 +257,12 @@ padding:17px 18px;box-shadow:0 15px 50px rgba(255,214,0,.15)}
       <div class="challenge">
         <small>⚡ SFIDA DELLA SETTIMANA</small>
         <b>Varzè parte davanti, ma nessuno ha ancora raggiunto le 8 partite necessarie. Chi si prende la Top 10?</b>
+      </div>
+
+      <div class="next-match">
+        <div class="label">🎯 PROSSIMA SFIDA CONSIGLIATA</div>
+        <h3>Varzè vs Bertolini: il primo vero test del ranking</h3>
+        <p>Varzè è in testa per performance media, Bertolini è il più attivo tra i giocatori di vertice. Una sfida con coppie equilibrate potrebbe incidere molto sia sul livello sia sulla classifica Challenge.</p>
       </div>
     </section>
 
