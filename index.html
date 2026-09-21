@@ -3,804 +3,224 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0b0b0b">
-<title>Padel Lunch Challenge 2026 • Sport Up Padel</title>
-<meta name="description" content="Classifica ufficiale e risultati del Padel Lunch Challenge 2026 di Sport Up Padel Castegnato.">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="Classifica ufficiale e risultati del Padel Lunch Challenge 2026 - Sport Up Padel Castegnato">
+<title>Padel Lunch Challenge 2026 • Sport Up</title>
 <style>
-:root {
-  --bg:#070707;
-  --panel:#111111;
-  --panel2:#191919;
-  --line:#2f2f2f;
-  --yellow:#ffd400;
-  --yellow2:#fff06a;
-  --white:#f5f5f1;
-  --muted:#b0b0b0;
-  --green:#64e390;
-  --red:#ff8193;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  color:var(--white);
-  font-family:Arial, Helvetica, sans-serif;
-  background:
-   radial-gradient(circle at 0% 0%, rgba(255,212,0,.18), transparent 18%),
-   radial-gradient(circle at 100% 18%, rgba(255,212,0,.16), transparent 20%),
-   radial-gradient(circle at 0% 100%, rgba(255,212,0,.12), transparent 16%),
-   linear-gradient(180deg, #050505 0%, #0b0b0b 100%);
-}
-body:before, body:after {
-  content:"";
-  position:fixed;
-  width:220px;
-  height:220px;
-  pointer-events:none;
-  z-index:0;
-  opacity:.17;
-  background:
-    radial-gradient(circle at 30% 30%, var(--yellow) 0, rgba(255,212,0,.0) 55%);
-}
-body:before{top:0;left:0;transform:rotate(12deg)}
-body:after{right:0;bottom:0;transform:rotate(-12deg)}
-.shell{position:relative;z-index:1;max-width:1100px;margin:auto;padding-bottom:40px}
-.hero{
-  padding:26px 18px 22px;
-  text-align:center;
-  position:relative;
-  overflow:hidden;
-}
-.corner-note {
-  position:absolute;
-  font-weight:900;
-  font-size:clamp(16px,2vw,26px);
-  color:var(--yellow);
-  transform:rotate(-8deg);
-  opacity:.95;
-  font-style:italic;
-}
-.note-left{left:18px;top:120px;text-align:left}
-.note-right{right:18px;top:90px;text-align:right}
-.note-bottom{right:22px;bottom:20px;text-align:right;transform:rotate(6deg)}
-.logo-wrap {
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:14px;
-}
-.logo {
-  width:min(360px,86vw);
-  background:#fff;
-  border-radius:22px;
-  padding:14px 20px;
-  box-shadow:0 14px 48px rgba(0,0,0,.48);
-}
-.kicker {
-  letter-spacing:.28em;
-  text-transform:uppercase;
-  color:#dddddd;
-  font-size:clamp(12px,1.6vw,16px);
-  margin-top:6px;
-}
-.title {
-  margin:12px 0 10px;
-  font-size:clamp(36px,7vw,78px);
-  line-height:.88;
-  font-weight:900;
-  letter-spacing:-.04em;
-}
-.title .white{color:var(--white)}
-.title .accent{
-  color:var(--yellow);
-  font-style:italic;
-  text-shadow:0 0 12px rgba(255,212,0,.18);
-}
-.subtitle {
-  margin:8px auto 0;
-  display:inline-block;
-  border-top:3px solid var(--yellow);
-  border-bottom:3px solid var(--yellow);
-  padding:10px 20px;
-  letter-spacing:.22em;
-  text-transform:uppercase;
-  font-weight:900;
-}
-.quick-stats {
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:12px;
-  margin-top:24px;
-}
-.stat {
-  background:linear-gradient(180deg, rgba(20,20,20,.98), rgba(12,12,12,.98));
-  border:1px solid #313131;
-  border-radius:18px;
-  padding:14px 10px;
-  box-shadow:0 10px 30px rgba(0,0,0,.35);
-}
-.stat span {
-  display:block;
-  font-size:10px;
-  letter-spacing:.18em;
-  color:#a8a8a8;
-  text-transform:uppercase;
-  margin-bottom:6px;
-  font-weight:800;
-}
-.stat strong {
-  display:block;
-  color:var(--yellow);
-  font-size:22px;
-}
-.nav {
-  position:sticky;
-  top:0;
-  z-index:5;
-  display:flex;
-  gap:10px;
-  padding:12px 16px;
-  background:rgba(6,6,6,.84);
-  backdrop-filter:blur(10px);
-  border-top:1px solid rgba(255,255,255,.04);
-  border-bottom:1px solid rgba(255,255,255,.06);
-}
-.nav a {
-  flex:1;
-  text-align:center;
-  padding:12px 10px;
-  border-radius:12px;
-  background:#171717;
-  color:#fff;
-  font-size:12px;
-  font-weight:900;
-  letter-spacing:.08em;
-  border:1px solid #353535;
-}
-.nav a.primary{background:var(--yellow);color:#0b0b0b;border-color:var(--yellow)}
-.section{padding:22px 16px 10px}
-.head {
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-end;
-  gap:12px;
-  margin-bottom:14px;
-}
-.head small {
-  display:block;
-  color:var(--yellow);
-  letter-spacing:.22em;
-  text-transform:uppercase;
-  font-size:10px;
-  font-weight:900;
-  margin-bottom:4px;
-}
-.head h2 {
-  margin:0;
-  font-size:clamp(26px,4vw,38px);
-  letter-spacing:-.03em;
-}
-.head .update {
-  text-align:right;
-  font-size:11px;
-  color:#a7a7a7;
-}
-.panel {
-  background:linear-gradient(180deg, rgba(19,19,19,.98), rgba(10,10,10,.98));
-  border:1px solid #333;
-  border-radius:22px;
-  overflow:hidden;
-  box-shadow:0 18px 50px rgba(0,0,0,.45);
-}
-.table-wrap{overflow:auto}
-table{width:100%;min-width:720px;border-collapse:collapse}
-thead th {
-  text-align:left;
-  padding:15px 12px;
-  background:#111;
-  color:#929292;
-  font-size:10px;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-}
-tbody td {
-  padding:15px 12px;
-  border-top:1px solid #262626;
-  font-size:15px;
-}
-tbody tr.podium td {
-  background:linear-gradient(90deg, rgba(255,212,0,.11), rgba(255,212,0,.02));
-}
-.pos{font-weight:900;font-size:18px}
-.name{font-weight:900}
-.pts{font-weight:900;color:var(--yellow)}
-.lvl{font-weight:900}
-.delta{font-weight:900}
-.delta.up{color:var(--green)}
-.delta.down{color:var(--red)}
-.info-row {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-  margin-top:12px;
-}
-.info-box {
-  background:#111;
-  border:1px solid #2f2f2f;
-  border-radius:18px;
-  padding:16px;
-}
-.info-box strong {
-  display:block;
-  font-size:20px;
-  color:var(--yellow);
-  margin-bottom:4px;
-}
-.info-box span{font-size:12px;color:#b3b3b3}
-.challenge {
-  margin-top:12px;
-  background:linear-gradient(135deg, var(--yellow), var(--yellow2));
-  color:#0b0b0b;
-  padding:18px 18px 16px;
-  border-radius:18px;
-  box-shadow:0 14px 38px rgba(255,212,0,.12);
-}
-.challenge small {
-  display:block;
-  font-size:10px;
-  letter-spacing:.2em;
-  font-weight:900;
-  margin-bottom:6px;
-}
-.challenge b{font-size:19px;line-height:1.3}
-.challenge p{margin:8px 0 0;font-size:13px;line-height:1.45}
-.results-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:16px;
-}
-.result-card {
-  background:linear-gradient(180deg, #0f0f0f, #090909);
-  border:1px solid #363636;
-  border-radius:24px;
-  padding:14px;
-  position:relative;
-  overflow:hidden;
-}
-.result-card:before {
-  content:"";
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  background:
-    radial-gradient(circle at 0% 0%, rgba(255,212,0,.09), transparent 25%),
-    radial-gradient(circle at 100% 0%, rgba(255,212,0,.08), transparent 24%);
-}
-.result-top {
-  position:relative;
-  z-index:1;
-  text-align:center;
-  margin-bottom:12px;
-}
-.match-date {
-  letter-spacing:.18em;
-  font-size:11px;
-  color:#e4e4e4;
-  text-transform:uppercase;
-}
-.small-kicker {
-  margin-top:8px;
-  color:var(--yellow);
-  font-size:11px;
-  font-weight:900;
-  letter-spacing:.22em;
-}
-.match-panels {
-  position:relative;
-  z-index:1;
-  display:grid;
-  grid-template-columns:1fr 70px 1fr;
-  gap:10px;
-  align-items:center;
-}
-.team-panel {
-  border:1px solid #454545;
-  border-radius:18px;
-  overflow:hidden;
-  background:#0d0d0d;
-  box-shadow:inset 0 0 0 1px rgba(255,255,255,.02);
-}
-.team-panel.winner {
-  border-color:var(--yellow);
-  box-shadow:0 0 0 2px rgba(255,212,0,.18), 0 0 16px rgba(255,212,0,.18);
-}
-.panel-title {
-  background:#1b1b1b;
-  padding:11px 10px;
-  text-align:center;
-  font-size:12px;
-  font-weight:900;
-  letter-spacing:.12em;
-  color:#fff;
-}
-.team-panel.winner .panel-title{background:var(--yellow); color:#0b0b0b}
-.team-name {
-  text-align:center;
-  padding:16px 10px;
-  font-size:19px;
-  font-weight:900;
-  border-top:1px solid #2b2b2b;
-}
-.vs {
-  text-align:center;
-  color:var(--yellow);
-  font-weight:900;
-  font-size:34px;
-  font-style:italic;
-}
-.score-rows {
-  position:relative;
-  z-index:1;
-  margin-top:14px;
-  display:grid;
-  gap:8px;
-}
-.score-row {
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr;
-  align-items:center;
-  border:1px solid #3b3b3b;
-  border-radius:12px;
-  overflow:hidden;
-}
-.score-row span {
-  text-align:center;
-  padding:10px;
-  font-size:22px;
-  font-weight:900;
-}
-.score-row b {
-  display:block;
-  text-align:center;
-  font-size:12px;
-  letter-spacing:.16em;
-  color:#c0c0c0;
-  font-weight:900;
-}
-.share {
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  align-items:center;
-  justify-content:space-between;
-  padding:18px;
-}
-.share p{margin:0;color:#bcbcbc;font-size:13px;line-height:1.45;max-width:620px}
-.actions{display:flex;gap:10px;flex-wrap:wrap}
-.btn {
-  border:0;
-  border-radius:12px;
-  padding:12px 16px;
-  font-weight:900;
-  letter-spacing:.06em;
-  cursor:pointer;
-}
-.btn.primary{background:var(--yellow);color:#0a0a0a}
-.btn.secondary{background:#1a1a1a;color:#fff;border:1px solid #3a3a3a}
-.footer {
-  padding:30px 16px 44px;
-  text-align:center;
-  color:#7f7f7f;
-  font-size:11px;
-}
-@media (max-width:900px) {
-  .results-grid {grid-template-columns:1fr}
-}
-@media (max-width:760px) {
-  .quick-stats{grid-template-columns:1fr 1fr}
-  .info-row{grid-template-columns:1fr 1fr}
-  .corner-note{display:none}
-}
-@media (max-width:620px) {
-  .nav{flex-wrap:wrap}
-  .nav a{flex:1 1 calc(50% - 10px)}
-  .match-panels{grid-template-columns:1fr}
-  .vs{font-size:28px}
-  .team-name{font-size:18px}
-  .score-row span{font-size:20px}
-  .share{display:block}
-  .actions{margin-top:14px}
-}
+:root{--black:#050505;--panel:#111;--panel2:#191919;--yellow:#ffd400;--yellow2:#ffef5a;--white:#f7f7f4;--muted:#a7a7a7;--green:#6de498;--red:#ff7e91}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#050505;color:var(--white);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-5;background:
+radial-gradient(circle at 7% 7%,rgba(255,212,0,.22),transparent 10%),
+radial-gradient(circle at 92% 16%,rgba(255,212,0,.14),transparent 13%),
+radial-gradient(circle at 15% 88%,rgba(255,212,0,.12),transparent 15%),
+linear-gradient(180deg,#050505,#0b0b0b 55%,#050505)}
+.shell{max-width:1160px;margin:auto;overflow:hidden}
+.hero{position:relative;min-height:620px;padding:28px 18px 34px;overflow:hidden;background:
+linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.25) 46%,rgba(0,0,0,.88) 100%),
+linear-gradient(125deg,#080808 0%,#111 48%,#060606 100%)}
+.hero:before{content:"";position:absolute;inset:-40px;background:
+radial-gradient(circle at 9% 22%,rgba(255,212,0,.26) 0 2%,transparent 2.2%),
+radial-gradient(circle at 86% 20%,rgba(255,212,0,.20) 0 1.6%,transparent 1.8%),
+radial-gradient(circle at 88% 74%,rgba(255,212,0,.16) 0 1.8%,transparent 2%),
+repeating-linear-gradient(165deg,transparent 0 64px,rgba(255,212,0,.025) 65px 68px,transparent 69px 110px);
+opacity:.9;transform:rotate(-1deg)}
+.hero-inner{position:relative;z-index:3;max-width:960px;margin:auto;text-align:center}
+.logo-wrap{height:150px;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.logo{width:min(420px,82vw);height:auto;filter:invert(1) grayscale(1) contrast(3) brightness(2.2);mix-blend-mode:screen;opacity:.97}
+.brand-city{display:flex;align-items:center;justify-content:center;gap:20px;letter-spacing:.28em;font-size:18px;margin-top:-12px}
+.brand-city:before,.brand-city:after{content:"";width:120px;max-width:18vw;height:3px;background:var(--yellow);box-shadow:0 0 16px rgba(255,212,0,.45)}
+.brand-ball{display:inline-block;width:30px;height:30px;border-radius:50%;background:var(--yellow);position:relative;vertical-align:middle;margin:0 7px;box-shadow:0 0 20px rgba(255,212,0,.25)}
+.brand-ball:before,.brand-ball:after{content:"";position:absolute;top:2px;width:11px;height:26px;border:2px solid #111;border-top-color:transparent;border-bottom-color:transparent;border-radius:50%}
+.brand-ball:before{left:1px}.brand-ball:after{right:1px}
+.challenge-title{margin:48px auto 0;text-transform:uppercase;font-family:Impact,"Arial Black",sans-serif;font-size:clamp(50px,8vw,108px);line-height:.83;letter-spacing:-.02em;text-shadow:0 7px 24px rgba(0,0,0,.55)}
+.challenge-title .lunch{display:inline-block;color:var(--yellow);font-family:"Brush Script MT","Segoe Script",cursive;font-size:1.08em;font-weight:700;text-transform:none;transform:rotate(-4deg);margin:0 .05em;text-shadow:0 0 16px rgba(255,212,0,.25)}
+.hero-sub{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:21px;letter-spacing:.32em;font-size:15px;text-transform:uppercase}
+.hero-sub:before,.hero-sub:after{content:"";height:3px;width:120px;max-width:18vw;background:var(--yellow)}
+.scribble{position:absolute;color:var(--yellow);font-family:"Brush Script MT","Segoe Script",cursive;font-size:clamp(24px,3vw,44px);line-height:.85;font-weight:700;transform:rotate(-10deg);z-index:2;text-shadow:0 4px 18px #000}
+.scribble.left{left:4%;top:20%}.scribble.right{right:5%;top:15%}.scribble.bottom{right:5%;bottom:8%;color:#d6d6d6;transform:rotate(-8deg)}
+.racket{position:absolute;width:180px;height:245px;border:18px solid #151515;border-radius:48% 48% 44% 44%;z-index:1;opacity:.92;box-shadow:inset 0 0 0 5px rgba(255,212,0,.18),0 0 40px rgba(255,212,0,.12)}
+.racket:before{content:"";position:absolute;inset:15px;border-radius:45%;background:radial-gradient(circle,#000 0 4px,transparent 4.5px) 0 0/28px 28px}
+.racket:after{content:"";position:absolute;width:35px;height:150px;background:#111;left:54px;bottom:-145px;border-radius:10px;transform:rotate(4deg);box-shadow:inset 0 0 0 4px rgba(255,212,0,.15)}
+.racket.left{left:-80px;top:20px;transform:rotate(-22deg)}.racket.right{right:-96px;top:88px;transform:rotate(24deg)}
+.ball{position:absolute;width:112px;height:112px;border-radius:50%;background:radial-gradient(circle at 38% 32%,#fff47b 0,#ead400 48%,#907d00 100%);filter:blur(.2px);box-shadow:0 0 45px rgba(255,212,0,.25);z-index:1}
+.ball:before,.ball:after{content:"";position:absolute;top:8px;width:42px;height:95px;border:5px solid rgba(255,255,255,.7);border-top-color:transparent;border-bottom-color:transparent;border-radius:50%}
+.ball:before{left:-3px}.ball:after{right:-3px}.ball.one{right:-22px;top:230px}.ball.two{left:-34px;bottom:30px;transform:scale(1.25);filter:blur(1px)}
+.quick{position:relative;z-index:4;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:930px;margin:45px auto 0}
+.stat{background:rgba(10,10,10,.82);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(6px);border-radius:17px;padding:15px 10px;box-shadow:0 14px 38px rgba(0,0,0,.35)}
+.stat span{display:block;color:#aaa;font-size:9px;letter-spacing:.17em;font-weight:900;text-transform:uppercase;margin-bottom:7px}.stat strong{display:block;color:var(--yellow);font-size:23px}
+.nav{position:sticky;top:0;z-index:30;display:flex;gap:9px;padding:11px 14px;background:rgba(5,5,5,.9);backdrop-filter:blur(12px);border-top:1px solid #242424;border-bottom:1px solid #242424}
+.nav a{flex:1;text-align:center;padding:11px 8px;border:1px solid #303030;border-radius:12px;background:#111;font-size:12px;font-weight:900;letter-spacing:.08em}.nav a.primary{background:var(--yellow);color:#080808;border-color:var(--yellow)}
+.section{padding:24px 15px 10px}.head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:14px}.head small{display:block;color:var(--yellow);font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:900;margin-bottom:5px}.head h2{margin:0;font-family:Impact,"Arial Black",sans-serif;font-size:clamp(30px,4vw,44px);letter-spacing:.01em;text-transform:uppercase}.updated{text-align:right;font-size:11px;color:var(--muted)}
+.panel{background:linear-gradient(180deg,#131313,#0a0a0a);border:1px solid #303030;border-radius:22px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.42)}.table-wrap{overflow:auto}table{width:100%;min-width:700px;border-collapse:collapse}th{text-align:left;padding:14px 11px;background:#101010;color:#8f8f8f;font-size:10px;letter-spacing:.13em;text-transform:uppercase}td{padding:15px 11px;border-top:1px solid #262626;font-size:15px}tr.podium td{background:linear-gradient(90deg,rgba(255,212,0,.11),rgba(255,212,0,.018))}.rank{font-size:18px;font-weight:900}.player{font-weight:900}.pts{font-weight:900;color:var(--yellow)}.up{color:var(--green);font-weight:900}.down{color:var(--red);font-weight:900}.flat{color:#aaa;font-weight:900}
+.info-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.info{background:#101010;border:1px solid #2e2e2e;border-radius:17px;padding:15px}.info strong{display:block;color:var(--yellow);font-size:20px;margin-bottom:4px}.info span{font-size:12px;color:#aaa}
+.challenge{margin-top:12px;background:linear-gradient(135deg,var(--yellow),var(--yellow2));color:#080808;border-radius:18px;padding:18px;box-shadow:0 14px 44px rgba(255,212,0,.15)}.challenge small{display:block;font-size:10px;letter-spacing:.2em;font-weight:900;margin-bottom:6px}.challenge b{font-size:19px;line-height:1.25}.challenge p{margin:8px 0 0;font-size:13px;line-height:1.45}
+.results{display:grid;grid-template-columns:1fr 1fr;gap:16px}.match-card{position:relative;overflow:hidden;background:linear-gradient(135deg,#070707 0%,#111 48%,#070707 100%);border:1px solid #343434;border-radius:24px;padding:17px;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+.match-card:before{content:"";position:absolute;right:-80px;top:-80px;width:210px;height:210px;border-radius:50%;background:radial-gradient(circle,var(--yellow),rgba(255,212,0,.1) 35%,transparent 68%);opacity:.22}.match-card:after{content:"";position:absolute;left:-40px;bottom:-70px;width:160px;height:160px;border:15px solid rgba(255,212,0,.12);border-radius:48%;transform:rotate(-20deg)}
+.match-card>*{position:relative;z-index:2}.match-date{text-align:center;letter-spacing:.18em;font-size:11px;text-transform:uppercase;color:#ddd}.mini-title{text-align:center;font-family:Impact,"Arial Black",sans-serif;font-size:clamp(25px,3vw,38px);margin-top:11px;text-transform:uppercase}.mini-title em{font-family:"Brush Script MT","Segoe Script",cursive;color:var(--yellow);font-size:1.2em;text-transform:none}.result-label{text-align:center;letter-spacing:.24em;font-size:11px;margin-top:5px}
+.teams{display:grid;grid-template-columns:1fr 62px 1fr;gap:10px;align-items:center;margin-top:15px}.team{border:1px solid #454545;background:rgba(7,7,7,.85);border-radius:16px;overflow:hidden}.team.winner{border-color:var(--yellow);box-shadow:0 0 0 2px rgba(255,212,0,.14),0 0 18px rgba(255,212,0,.16)}.team-tag{text-align:center;background:#191919;padding:10px;font-size:11px;letter-spacing:.1em;font-weight:900}.winner .team-tag{background:var(--yellow);color:#080808}.team strong{display:block;text-align:center;padding:15px 8px;border-top:1px solid #282828;font-size:17px}.versus{text-align:center;color:var(--yellow);font-family:"Brush Script MT",cursive;font-size:35px;font-weight:900;transform:rotate(-7deg)}
+.sets{display:grid;gap:7px;margin-top:14px}.set{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;border:1px solid #3b3b3b;border-radius:11px;background:#080808;overflow:hidden}.set span{text-align:center;padding:9px;font-size:23px;font-weight:900}.set b{text-align:center;color:#bbb;font-size:11px;letter-spacing:.15em}
+.share{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px}.share p{margin:0;color:#b7b7b7;font-size:13px;line-height:1.45;max-width:650px}.actions{display:flex;gap:9px;flex-wrap:wrap}.btn{border:0;border-radius:12px;padding:12px 15px;font-weight:900;letter-spacing:.05em;cursor:pointer}.btn.primary{background:var(--yellow);color:#080808}.btn.secondary{background:#191919;color:#fff;border:1px solid #383838}.footer{padding:32px 16px 44px;text-align:center;color:#777;font-size:11px}
+@media(max-width:900px){.results{grid-template-columns:1fr}.scribble{display:none}.racket{opacity:.45}.ball{opacity:.55}}
+@media(max-width:680px){.hero{min-height:570px}.logo-wrap{height:120px}.brand-city{font-size:14px}.challenge-title{font-size:48px;margin-top:40px}.hero-sub{font-size:11px;letter-spacing:.18em}.quick{grid-template-columns:1fr 1fr;margin-top:34px}.nav{flex-wrap:wrap}.nav a{flex:1 1 calc(50% - 9px)}.teams{grid-template-columns:1fr}.versus{font-size:29px}.info-row{grid-template-columns:1fr 1fr}.head{align-items:flex-start}.updated{max-width:120px}.share{display:block}.actions{margin-top:14px}}
 </style>
 </head>
 <body>
 <div class="shell">
-  <header class="hero">
-    <div class="corner-note note-left">PADEL PEOPLE<br>GOOD VIBES</div>
-    <div class="corner-note note-right">MORE THAN<br>A GAME</div>
-    <div class="corner-note note-bottom">PLAY<br>EAT<br>REPEAT</div>
-
-    <div class="logo-wrap">
-      <img class="logo" src="sportup-logo.jpg" alt="Sport Up Padel">
-      <div class="kicker">SPORT UP PADEL CASTEGNATO</div>
-      <div class="title"><span class="white">PADEL</span> <span class="accent">LUNCH</span><br><span class="white">CHALLENGE 2026</span></div>
-      <div class="subtitle">Classifica ufficiale</div>
-    </div>
-
-    <div class="quick-stats">
+<header class="hero">
+  <div class="racket left"></div><div class="racket right"></div>
+  <div class="ball one"></div><div class="ball two"></div>
+  <div class="scribble left">Padel<br>People<br>Good Vibes</div>
+  <div class="scribble right">More Than<br>a Game</div>
+  <div class="scribble bottom">Same Sport<br>Higher Mood</div>
+  <div class="hero-inner">
+    <div class="logo-wrap"><img class="logo" src="sportup-logo.jpg" alt="Sport Up Padel"></div>
+    <div class="brand-city"><span class="brand-ball"></span>CASTEGNATO</div>
+    <div class="challenge-title">PADEL <span class="lunch">Lunch</span> CHALLENGE</div>
+    <div class="hero-sub">Classifica ufficiale 2026</div>
+    <div class="quick">
       <div class="stat"><span>Ultimo aggiornamento</span><strong>21 SET</strong></div>
       <div class="stat"><span>Partite giocate</span><strong>7</strong></div>
       <div class="stat"><span>Qualificazione</span><strong>TOP 10</strong></div>
       <div class="stat"><span>Minimo partite</span><strong>8</strong></div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <nav class="nav">
-    <a class="primary" href="#classifica">CLASSIFICA</a>
-    <a href="#risultati">RISULTATI</a>
-    <a href="#condividi">CONDIVIDI</a>
-  </nav>
+<nav class="nav"><a class="primary" href="#classifica">CLASSIFICA</a><a href="#risultati">RISULTATI</a><a href="#condividi">CONDIVIDI</a></nav>
 
-  <section class="section" id="classifica">
-    <div class="head">
-      <div>
-        <small>Ranking ufficiale • algoritmo V2</small>
-        <h2>Classifica Challenge</h2>
-      </div>
-      <div class="update">Aggiornata al<br><b>21 settembre 2026</b></div>
-    </div>
+<section id="classifica" class="section">
+  <div class="head"><div><small>Ranking ufficiale • algoritmo V2</small><h2>Classifica Challenge</h2></div><div class="updated">Aggiornata al<br><b>21 settembre 2026</b></div></div>
+  <div class="panel table-wrap"><table><thead><tr><th>#</th><th>Giocatore</th><th>Punti Challenge</th><th>Livello</th><th>Δ livello</th><th>PG</th></tr></thead><tbody><tr class="podium"><td class="rank">🥇</td><td class="player">Varzè</td><td class="pts">65.0</td><td>4.08</td><td class="up">+0.08</td><td>2</td></tr><tr class="podium"><td class="rank">🥈</td><td class="player">Signoroni</td><td class="pts">64.3</td><td>4.04</td><td class="up">+0.04</td><td>1</td></tr><tr class="podium"><td class="rank">🥉</td><td class="player">Breda</td><td class="pts">56.7</td><td>4.07</td><td class="up">+0.07</td><td>4</td></tr><tr class=""><td class="rank">4</td><td class="player">Bertolini</td><td class="pts">56.4</td><td>4.06</td><td class="up">+0.06</td><td>4</td></tr><tr class=""><td class="rank">5</td><td class="player">Ranieri</td><td class="pts">54.8</td><td>4.04</td><td class="up">+0.04</td><td>3</td></tr><tr class=""><td class="rank">6</td><td class="player">Negri</td><td class="pts">51.5</td><td>4.02</td><td class="up">+0.02</td><td>2</td></tr><tr class=""><td class="rank">7</td><td class="player">Materzanini</td><td class="pts">50.1</td><td>4.00</td><td class="flat">0.00</td><td>2</td></tr><tr class=""><td class="rank">8</td><td class="player">Gerolimich</td><td class="pts">44.8</td><td>3.95</td><td class="down">-0.05</td><td>3</td></tr><tr class=""><td class="rank">9</td><td class="player">Cortellini</td><td class="pts">36.1</td><td>3.89</td><td class="down">-0.11</td><td>3</td></tr><tr class=""><td class="rank">10</td><td class="player">Moschin</td><td class="pts">36.1</td><td>3.93</td><td class="down">-0.07</td><td>2</td></tr><tr class=""><td class="rank">11</td><td class="player">Febbo</td><td class="pts">35.7</td><td>3.96</td><td class="down">-0.04</td><td>1</td></tr><tr class=""><td class="rank">12</td><td class="player">Mena</td><td class="pts">35.3</td><td>3.96</td><td class="down">-0.04</td><td>1</td></tr></tbody></table></div>
+  <div class="info-row"><div class="info"><strong>TOP 10</strong><span>accedono alla fase finale</span></div><div class="info"><strong>8 PARTITE</strong><span>minimo richiesto per qualificarsi</span></div></div>
+  <div class="challenge"><small>⚡ ALGORITMO V2</small><b>Vittoria, set, game, difficoltà dell'avversario e posizione incidono senza creare distacchi eccessivi.</b><p>Il punteggio Challenge è una media di performance per partita: giocare più match non genera punti automatici e le sconfitte combattute vengono valorizzate.</p></div>
+</section>
 
-    <div class="panel table-wrap">
-      <table>
-        <thead>
-          <tr><th>#</th><th>Giocatore</th><th>Punti Challenge</th><th>Livello</th><th>Δ livello</th><th>PG</th></tr>
-        </thead>
-        <tbody>
-    <tr class="podium">
-      <td class="pos">🥇</td>
-      <td class="name">Varzè</td>
-      <td class="pts">65.0</td>
-      <td class="lvl">4.08</td>
-      <td class="delta up">+0.08</td>
-      <td>2</td>
-    </tr>
-
-    <tr class="podium">
-      <td class="pos">🥈</td>
-      <td class="name">Signoroni</td>
-      <td class="pts">64.3</td>
-      <td class="lvl">4.04</td>
-      <td class="delta up">+0.04</td>
-      <td>1</td>
-    </tr>
-
-    <tr class="podium">
-      <td class="pos">🥉</td>
-      <td class="name">Breda</td>
-      <td class="pts">56.7</td>
-      <td class="lvl">4.07</td>
-      <td class="delta up">+0.07</td>
-      <td>4</td>
-    </tr>
-
-    <tr class="">
-      <td class="pos">4</td>
-      <td class="name">Bertolini</td>
-      <td class="pts">56.4</td>
-      <td class="lvl">4.06</td>
-      <td class="delta up">+0.06</td>
-      <td>4</td>
-    </tr>
-
-    <tr class="">
-      <td class="pos">5</td>
-      <td class="name">Ranieri</td>
-      <td class="pts">54.8</td>
-      <td class="lvl">4.04</td>
-      <td class="delta up">+0.04</td>
-      <td>3</td>
-    </tr>
-
-    <tr class="">
-      <td class="pos">6</td>
-      <td class="name">Negri</td>
-      <td class="pts">51.5</td>
-      <td class="lvl">4.02</td>
-      <td class="delta up">+0.02</td>
-      <td>2</td>
-    </tr>
-
-    <tr class="">
-      <td class="pos">7</td>
-      <td class="name">Materzanini</td>
-      <td class="pts">50.1</td>
-      <td class="lvl">4.00</td>
-      <td class="delta ">0.00</td>
-      <td>2</td>
-    </tr>
-
-    <tr class="">
-      <td class="pos">8</td>
-      <td class="name">Gerolimich</td>
-      <td class="pts">44.8</td>
-      <td class="lvl">3.95</td>
-      <td class="delta down">-0.05</td>
-      <td>3</td>
-    </tr>
-
-    <tr class="">
-      <td class="pos">9</td>
-      <td class="name">Cortellini</td>
-      <td class="pts">36.1</td>
-      <td class="lvl">3.89</td>
-      <td class="delta down">-0.11</td>
-      <td>3</td>
-    </tr>
-
-    <tr class="">
-      <td class="pos">10</td>
-      <td class="name">Moschin</td>
-      <td class="pts">36.1</td>
-      <td class="lvl">3.93</td>
-      <td class="delta down">-0.07</td>
-      <td>2</td>
-    </tr>
-
-    <tr class="">
-      <td class="pos">11</td>
-      <td class="name">Febbo</td>
-      <td class="pts">35.7</td>
-      <td class="lvl">3.96</td>
-      <td class="delta down">-0.04</td>
-      <td>1</td>
-    </tr>
-
-    <tr class="">
-      <td class="pos">12</td>
-      <td class="name">Mena</td>
-      <td class="pts">35.3</td>
-      <td class="lvl">3.96</td>
-      <td class="delta down">-0.04</td>
-      <td>1</td>
-    </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="info-row">
-      <div class="info-box"><strong>TOP 10</strong><span>accedono alla fase finale</span></div>
-      <div class="info-box"><strong>8 PARTITE</strong><span>minimo richiesto per qualificarsi</span></div>
-    </div>
-
-    <div class="challenge">
-      <small>⚡ ALGORITMO V2</small>
-      <b>Classifica più equilibrata: vittoria, set, game, difficoltà avversaria e posizione incidono senza creare distacchi eccessivi.</b>
-      <p>Il punteggio Challenge è una media di performance per partita: giocare più match non genera punti automatici. Le sconfitte combattute vengono valorizzate molto più della versione precedente.</p>
-    </div>
-  </section>
-
-  <section class="section" id="risultati">
-    <div class="head">
-      <div>
-        <small>Risultati ufficiali</small>
-        <h2>Ultime partite</h2>
+<section id="risultati" class="section">
+  <div class="head"><div><small>Risultati ufficiali</small><h2>Ultime partite</h2></div><div class="updated">Stile coordinato<br><b>alle grafiche WhatsApp</b></div></div>
+  <div class="results"><article class="match-card">
+    <div class="match-date">21 SETTEMBRE 2026</div>
+    <div class="mini-title">PADEL <em>LUNCH</em> CHALLENGE</div>
+    <div class="result-label">RISULTATO UFFICIALE</div>
+    <div class="teams">
+      <div class="team winner">
+        <div class="team-tag">♛ VINCONO</div>
+        <strong>Bertolini</strong><strong>Ranieri</strong>
       </div>
-      <div class="update">Grafica pronta<br><b>per WhatsApp</b></div>
-    </div>
-
-    <div class="results-grid">
-      
-    <article class="result-card">
-      <div class="result-top">
-        <div class="match-date">21 SETTEMBRE 2026</div>
-        <div class="small-kicker">PADEL LUNCH CHALLENGE</div>
-      </div>
-      <div class="match-panels">
-        <div class="team-panel winner">
-          <div class="panel-title">👑 VINCONO</div>
-          <div class="team-name">Bertolini</div>
-          <div class="team-name">Ranieri</div>
-        </div>
-        <div class="vs">VS</div>
-        <div class="team-panel ">
-          <div class="panel-title">COPPIA 2</div>
-          <div class="team-name">Moschin</div>
-          <div class="team-name">Mena</div>
-        </div>
-      </div>
-      <div class="score-rows">
-        <div class="score-row"><span>6</span><b>SET 1</b><span>3</span></div>
-        <div class="score-row"><span>6</span><b>SET 2</b><span>4</span></div>
-        <div class="score-row"><span>5</span><b>SET 3</b><span>7</span></div>
-      </div>
-    </article>
-    
-    <article class="result-card">
-      <div class="result-top">
-        <div class="match-date">16 SETTEMBRE 2026</div>
-        <div class="small-kicker">PADEL LUNCH CHALLENGE</div>
-      </div>
-      <div class="match-panels">
-        <div class="team-panel ">
-          <div class="panel-title">COPPIA 1</div>
-          <div class="team-name">Bertolini</div>
-          <div class="team-name">Gerolimich</div>
-        </div>
-        <div class="vs">VS</div>
-        <div class="team-panel winner">
-          <div class="panel-title">👑 VINCONO</div>
-          <div class="team-name">Negri</div>
-          <div class="team-name">Varzè</div>
-        </div>
-      </div>
-      <div class="score-rows">
-        <div class="score-row"><span>6</span><b>SET 1</b><span>4</span></div>
-        <div class="score-row"><span>5</span><b>SET 2</b><span>7</span></div>
-        <div class="score-row"><span>5</span><b>SET 3</b><span>7</span></div>
-      </div>
-    </article>
-    
-    <article class="result-card">
-      <div class="result-top">
-        <div class="match-date">15 SETTEMBRE 2026</div>
-        <div class="small-kicker">PADEL LUNCH CHALLENGE</div>
-      </div>
-      <div class="match-panels">
-        <div class="team-panel winner">
-          <div class="panel-title">👑 VINCONO</div>
-          <div class="team-name">Bertolini</div>
-          <div class="team-name">Materzanini</div>
-        </div>
-        <div class="vs">VS</div>
-        <div class="team-panel ">
-          <div class="panel-title">COPPIA 2</div>
-          <div class="team-name">Cortellini</div>
-          <div class="team-name">Breda</div>
-        </div>
-      </div>
-      <div class="score-rows">
-        <div class="score-row"><span>6</span><b>SET 1</b><span>4</span></div>
-        <div class="score-row"><span>7</span><b>SET 2</b><span>6</span></div>
-        <div class="score-row"><span>4</span><b>SET 3</b><span>6</span></div>
-      </div>
-    </article>
-    
-    <article class="result-card">
-      <div class="result-top">
-        <div class="match-date">14 SETTEMBRE 2026</div>
-        <div class="small-kicker">PADEL LUNCH CHALLENGE</div>
-      </div>
-      <div class="match-panels">
-        <div class="team-panel ">
-          <div class="panel-title">COPPIA 1</div>
-          <div class="team-name">Ranieri</div>
-          <div class="team-name">Gerolimich</div>
-        </div>
-        <div class="vs">VS</div>
-        <div class="team-panel winner">
-          <div class="panel-title">👑 VINCONO</div>
-          <div class="team-name">Varzè</div>
-          <div class="team-name">Breda</div>
-        </div>
-      </div>
-      <div class="score-rows">
-        <div class="score-row"><span>6</span><b>SET 1</b><span>7</span></div>
-        <div class="score-row"><span>7</span><b>SET 2</b><span>5</span></div>
-        <div class="score-row"><span>3</span><b>SET 3</b><span>6</span></div>
-      </div>
-    </article>
-    
-    <article class="result-card">
-      <div class="result-top">
-        <div class="match-date">10 SETTEMBRE 2026</div>
-        <div class="small-kicker">PADEL LUNCH CHALLENGE</div>
-      </div>
-      <div class="match-panels">
-        <div class="team-panel winner">
-          <div class="panel-title">👑 VINCONO</div>
-          <div class="team-name">Signoroni</div>
-          <div class="team-name">Gerolimich</div>
-        </div>
-        <div class="vs">VS</div>
-        <div class="team-panel ">
-          <div class="panel-title">COPPIA 2</div>
-          <div class="team-name">Cortellini</div>
-          <div class="team-name">Febbo</div>
-        </div>
-      </div>
-      <div class="score-rows">
-        <div class="score-row"><span>6</span><b>SET 1</b><span>4</span></div>
-        <div class="score-row"><span>7</span><b>SET 2</b><span>6</span></div>
-        <div class="score-row"><span>6</span><b>SET 3</b><span>7</span></div>
-      </div>
-    </article>
-    
-    <article class="result-card">
-      <div class="result-top">
-        <div class="match-date">09 SETTEMBRE 2026</div>
-        <div class="small-kicker">PADEL LUNCH CHALLENGE</div>
-      </div>
-      <div class="match-panels">
-        <div class="team-panel ">
-          <div class="panel-title">COPPIA 1</div>
-          <div class="team-name">Negri</div>
-          <div class="team-name">Moschin</div>
-        </div>
-        <div class="vs">VS</div>
-        <div class="team-panel winner">
-          <div class="panel-title">👑 VINCONO</div>
-          <div class="team-name">Bertolini</div>
-          <div class="team-name">Breda</div>
-        </div>
-      </div>
-      <div class="score-rows">
-        <div class="score-row"><span>6</span><b>SET 1</b><span>3</span></div>
-        <div class="score-row"><span>5</span><b>SET 2</b><span>7</span></div>
-        <div class="score-row"><span>4</span><b>SET 3</b><span>6</span></div>
-      </div>
-    </article>
-    
-    <article class="result-card">
-      <div class="result-top">
-        <div class="match-date">08 SETTEMBRE 2026</div>
-        <div class="small-kicker">PADEL LUNCH CHALLENGE</div>
-      </div>
-      <div class="match-panels">
-        <div class="team-panel ">
-          <div class="panel-title">COPPIA 1</div>
-          <div class="team-name">Cortellini</div>
-          <div class="team-name">Materzanini</div>
-        </div>
-        <div class="vs">VS</div>
-        <div class="team-panel winner">
-          <div class="panel-title">👑 VINCONO</div>
-          <div class="team-name">Ranieri</div>
-          <div class="team-name">Breda</div>
-        </div>
-      </div>
-      <div class="score-rows">
-        <div class="score-row"><span>6</span><b>SET 1</b><span>1</span></div>
-        <div class="score-row"><span>4</span><b>SET 2</b><span>6</span></div>
-        <div class="score-row"><span>5</span><b>SET 3</b><span>7</span></div>
-      </div>
-    </article>
-    
-    </div>
-  </section>
-
-  <section class="section" id="condividi">
-    <div class="head">
-      <div>
-        <small>Link ufficiale</small>
-        <h2>Condividi il Challenge</h2>
+      <div class="versus">VS</div>
+      <div class="team ">
+        <div class="team-tag">COPPIA 2</div>
+        <strong>Moschin</strong><strong>Mena</strong>
       </div>
     </div>
-
-    <div class="panel share">
-      <p>Usa questo link nel gruppo WhatsApp. Ad ogni nuovo risultato aggiornerò classifica, livelli e risultati recenti mantenendo lo stesso indirizzo pubblico.</p>
-      <div class="actions">
-        <button class="btn primary" onclick="shareWhatsapp()">WHATSAPP</button>
-        <button class="btn secondary" onclick="copyLink()">COPIA LINK</button>
+    <div class="sets"><div class="set"><span>6</span><b>SET 1</b><span>3</span></div><div class="set"><span>6</span><b>SET 2</b><span>4</span></div><div class="set"><span>5</span><b>SET 3</b><span>7</span></div></div>
+  </article><article class="match-card">
+    <div class="match-date">16 SETTEMBRE 2026</div>
+    <div class="mini-title">PADEL <em>LUNCH</em> CHALLENGE</div>
+    <div class="result-label">RISULTATO UFFICIALE</div>
+    <div class="teams">
+      <div class="team ">
+        <div class="team-tag">COPPIA 1</div>
+        <strong>Bertolini</strong><strong>Gerolimich</strong>
+      </div>
+      <div class="versus">VS</div>
+      <div class="team winner">
+        <div class="team-tag">♛ VINCONO</div>
+        <strong>Negri</strong><strong>Varzè</strong>
       </div>
     </div>
-  </section>
+    <div class="sets"><div class="set"><span>6</span><b>SET 1</b><span>4</span></div><div class="set"><span>5</span><b>SET 2</b><span>7</span></div><div class="set"><span>5</span><b>SET 3</b><span>7</span></div></div>
+  </article><article class="match-card">
+    <div class="match-date">15 SETTEMBRE 2026</div>
+    <div class="mini-title">PADEL <em>LUNCH</em> CHALLENGE</div>
+    <div class="result-label">RISULTATO UFFICIALE</div>
+    <div class="teams">
+      <div class="team winner">
+        <div class="team-tag">♛ VINCONO</div>
+        <strong>Bertolini</strong><strong>Materzanini</strong>
+      </div>
+      <div class="versus">VS</div>
+      <div class="team ">
+        <div class="team-tag">COPPIA 2</div>
+        <strong>Cortellini</strong><strong>Breda</strong>
+      </div>
+    </div>
+    <div class="sets"><div class="set"><span>6</span><b>SET 1</b><span>4</span></div><div class="set"><span>7</span><b>SET 2</b><span>6</span></div><div class="set"><span>4</span><b>SET 3</b><span>6</span></div></div>
+  </article><article class="match-card">
+    <div class="match-date">14 SETTEMBRE 2026</div>
+    <div class="mini-title">PADEL <em>LUNCH</em> CHALLENGE</div>
+    <div class="result-label">RISULTATO UFFICIALE</div>
+    <div class="teams">
+      <div class="team ">
+        <div class="team-tag">COPPIA 1</div>
+        <strong>Ranieri</strong><strong>Gerolimich</strong>
+      </div>
+      <div class="versus">VS</div>
+      <div class="team winner">
+        <div class="team-tag">♛ VINCONO</div>
+        <strong>Varzè</strong><strong>Breda</strong>
+      </div>
+    </div>
+    <div class="sets"><div class="set"><span>6</span><b>SET 1</b><span>7</span></div><div class="set"><span>7</span><b>SET 2</b><span>5</span></div><div class="set"><span>3</span><b>SET 3</b><span>6</span></div></div>
+  </article><article class="match-card">
+    <div class="match-date">10 SETTEMBRE 2026</div>
+    <div class="mini-title">PADEL <em>LUNCH</em> CHALLENGE</div>
+    <div class="result-label">RISULTATO UFFICIALE</div>
+    <div class="teams">
+      <div class="team winner">
+        <div class="team-tag">♛ VINCONO</div>
+        <strong>Signoroni</strong><strong>Gerolimich</strong>
+      </div>
+      <div class="versus">VS</div>
+      <div class="team ">
+        <div class="team-tag">COPPIA 2</div>
+        <strong>Cortellini</strong><strong>Febbo</strong>
+      </div>
+    </div>
+    <div class="sets"><div class="set"><span>6</span><b>SET 1</b><span>4</span></div><div class="set"><span>7</span><b>SET 2</b><span>6</span></div><div class="set"><span>6</span><b>SET 3</b><span>7</span></div></div>
+  </article><article class="match-card">
+    <div class="match-date">09 SETTEMBRE 2026</div>
+    <div class="mini-title">PADEL <em>LUNCH</em> CHALLENGE</div>
+    <div class="result-label">RISULTATO UFFICIALE</div>
+    <div class="teams">
+      <div class="team ">
+        <div class="team-tag">COPPIA 1</div>
+        <strong>Negri</strong><strong>Moschin</strong>
+      </div>
+      <div class="versus">VS</div>
+      <div class="team winner">
+        <div class="team-tag">♛ VINCONO</div>
+        <strong>Bertolini</strong><strong>Breda</strong>
+      </div>
+    </div>
+    <div class="sets"><div class="set"><span>6</span><b>SET 1</b><span>3</span></div><div class="set"><span>5</span><b>SET 2</b><span>7</span></div><div class="set"><span>4</span><b>SET 3</b><span>6</span></div></div>
+  </article><article class="match-card">
+    <div class="match-date">08 SETTEMBRE 2026</div>
+    <div class="mini-title">PADEL <em>LUNCH</em> CHALLENGE</div>
+    <div class="result-label">RISULTATO UFFICIALE</div>
+    <div class="teams">
+      <div class="team ">
+        <div class="team-tag">COPPIA 1</div>
+        <strong>Cortellini</strong><strong>Materzanini</strong>
+      </div>
+      <div class="versus">VS</div>
+      <div class="team winner">
+        <div class="team-tag">♛ VINCONO</div>
+        <strong>Ranieri</strong><strong>Breda</strong>
+      </div>
+    </div>
+    <div class="sets"><div class="set"><span>6</span><b>SET 1</b><span>1</span></div><div class="set"><span>4</span><b>SET 2</b><span>6</span></div><div class="set"><span>5</span><b>SET 3</b><span>7</span></div></div>
+  </article></div>
+</section>
 
-  <footer class="footer">PADEL LUNCH CHALLENGE 2026 • SPORT UP PADEL CASTEGNATO</footer>
+<section id="condividi" class="section">
+  <div class="head"><div><small>Link ufficiale</small><h2>Condividi il Challenge</h2></div></div>
+  <div class="panel share"><p>Condividi il link nel gruppo WhatsApp. Il link resterà sempre lo stesso mentre classifica, livelli e risultati verranno aggiornati dopo ogni partita.</p><div class="actions"><button class="btn primary" onclick="shareWhatsapp()">WHATSAPP</button><button class="btn secondary" onclick="copyLink()">COPIA LINK</button></div></div>
+</section>
+
+<footer class="footer">PADEL LUNCH CHALLENGE 2026 • SPORT UP PADEL CASTEGNATO</footer>
 </div>
-
 <script>
-function shareWhatsapp() {
-  const text = encodeURIComponent("🎾 Padel Lunch Challenge 2026\nClassifica e risultati ufficiali:\n" + window.location.href);
-  window.open("https://wa.me/?text=" + text, "_blank");
-}
-async function copyLink() {
-  try {
-    await navigator.clipboard.writeText(window.location.href);
-    alert("Link copiato!");
-  } catch(e) {
-    prompt("Copia questo link:", window.location.href);
-  }
-}
+function shareWhatsapp(){const text=encodeURIComponent("🎾 Padel Lunch Challenge 2026\nClassifica e risultati ufficiali:\n"+window.location.href);window.open("https://wa.me/?text="+text,"_blank")}
+async function copyLink(){try{await navigator.clipboard.writeText(window.location.href);alert("Link copiato!")}catch(e){prompt("Copia questo link:",window.location.href)}}
 </script>
-</body>
-</html>
+</body></html>
