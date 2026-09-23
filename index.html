@@ -91,6 +91,14 @@ opacity:.9;transform:rotate(-1deg)}
  .quick{margin-top:28px}
 }
 
+
+.rules-wrap{margin-top:12px;background:linear-gradient(180deg,#111,#090909);border:1px solid #303030;border-radius:22px;padding:18px;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.rules-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.rule-card{background:#0c0c0c;border:1px solid #2e2e2e;border-radius:16px;padding:15px}
+.rule-card h3{margin:0 0 7px;font-size:15px;color:var(--yellow);letter-spacing:.05em;text-transform:uppercase}
+.rule-card p{margin:0;color:#c4c4c4;font-size:13px;line-height:1.5}
+.rules-note{margin-top:14px;padding:14px 16px;border-radius:14px;background:linear-gradient(135deg,var(--yellow),var(--yellow2));color:#080808;font-size:13px;line-height:1.45}
+@media(max-width:680px){.rules-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -121,7 +129,7 @@ opacity:.9;transform:rotate(-1deg)}
   </div>
 </header>
 
-<nav class="nav"><a class="primary" href="#classifica">CLASSIFICA</a><a href="#risultati">RISULTATI</a><a href="#condividi">CONDIVIDI</a></nav>
+<nav class="nav"><a class="primary" href="#classifica">CLASSIFICA</a><a href="#risultati">RISULTATI</a><a href="#regolamento">REGOLAMENTO</a><a href="#condividi">CONDIVIDI</a></nav>
 
 <section id="classifica" class="section">
   <div class="head"><div><small>Ranking ufficiale • algoritmo V2</small><h2>Classifica Challenge</h2></div><div class="updated">Aggiornata al<br><b>23 settembre 2026</b></div></div>
@@ -281,6 +289,29 @@ opacity:.9;transform:rotate(-1deg)}
     </div>
     <div class="sets"><div class="set"><span>6</span><b>SET 1</b><span>1</span></div><div class="set"><span>4</span><b>SET 2</b><span>6</span></div><div class="set"><span>5</span><b>SET 3</b><span>7</span></div></div>
   </article></div>
+</section>
+
+
+<section id="regolamento" class="section">
+  <div class="head">
+    <div><small>Regole ufficiali</small><h2>Regolamento Challenge</h2></div>
+    <div class="updated">Edizione<br><b>2026</b></div>
+  </div>
+  <div class="rules-wrap">
+    <div class="rules-grid">
+      <div class="rule-card"><h3>Iscrizione</h3><p>Iscrizione individuale. Le coppie vengono composte di volta in volta in base a disponibilità, livello e posizione di gioco.</p></div>
+      <div class="rule-card"><h3>Periodo e sede</h3><p>Challenge disputato esclusivamente presso Sport Up Padel Castegnato, con partite tra settembre e novembre 2026.</p></div>
+      <div class="rule-card"><h3>Formato partita</h3><p>Tre set da completare. Nei game si gioca con un solo vantaggio e, successivamente, killer point.</p></div>
+      <div class="rule-card"><h3>Partite valide</h3><p>Per entrare in graduatoria finale servono almeno 8 partite. Il limite massimo previsto è 15 partite per giocatore.</p></div>
+      <div class="rule-card"><h3>Classifica</h3><p>Il numero di partite non assegna punti automatici. Il ranking tiene conto di livello personale, livello della coppia, forza degli avversari, posizione di gioco, partite, set e game vinti.</p></div>
+      <div class="rule-card"><h3>Posizione</h3><p>Ogni giocatore ha una posizione naturale: destra, sinistra o entrambi. Se la coppia è composta fuori posizione, l'algoritmo considera il relativo vantaggio o svantaggio a livello di coppia.</p></div>
+      <div class="rule-card"><h3>Livello giocatore</h3><p>Il livello è dinamico e viene aggiornato dopo ogni partita. Tutti i giocatori sono partiti da livello 4,00.</p></div>
+      <div class="rule-card"><h3>Finali</h3><p>Accedono alle finali i primi 10 giocatori che abbiano raggiunto il minimo di 8 partite richieste.</p></div>
+      <div class="rule-card"><h3>Montepremi</h3><p>Montepremi complessivo: €500 se il circuito resta sotto le 40 partite totali; €1.000 al superamento delle 40 partite.</p></div>
+      <div class="rule-card"><h3>Partite aperte</h3><p>Le partite vengono organizzate tramite sondaggio/form e possono essere giocate nella fascia 12:00–14:30. La domenica resta libera.</p></div>
+    </div>
+    <div class="rules-note"><b>Principio del Challenge:</b> premiare la qualità della prestazione, non semplicemente chi gioca più partite. Per questo classifica e livello vengono aggiornati separatamente dopo ogni match.</div>
+  </div>
 </section>
 
 <section id="condividi" class="section">
