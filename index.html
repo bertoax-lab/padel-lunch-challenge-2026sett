@@ -6,6 +6,9 @@
 <meta name="theme-color" content="#050505">
 <meta name="description" content="Classifica ufficiale e risultati del Padel Lunch Challenge 2026 - Sport Up Padel Castegnato">
 <title>Padel Lunch Challenge 2026 • Sport Up</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 <style>
 :root{--black:#050505;--panel:#111;--panel2:#191919;--yellow:#ffd400;--yellow2:#ffef5a;--white:#f7f7f4;--muted:#a7a7a7;--green:#6de498;--red:#ff7e91}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#050505;color:var(--white);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}
@@ -62,9 +65,36 @@ opacity:.9;transform:rotate(-1deg)}
 .share{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px}.share p{margin:0;color:#b7b7b7;font-size:13px;line-height:1.45;max-width:650px}.actions{display:flex;gap:9px;flex-wrap:wrap}.btn{border:0;border-radius:12px;padding:12px 15px;font-weight:900;letter-spacing:.05em;cursor:pointer}.btn.primary{background:var(--yellow);color:#080808}.btn.secondary{background:#191919;color:#fff;border:1px solid #383838}.footer{padding:32px 16px 44px;text-align:center;color:#777;font-size:11px}
 @media(max-width:900px){.results{grid-template-columns:1fr}.scribble{display:none}.racket{opacity:.45}.ball{opacity:.55}}
 @media(max-width:680px){.hero{min-height:570px}.logo-wrap{height:120px}.brand-city{font-size:14px}.challenge-title{font-size:48px;margin-top:40px}.hero-sub{font-size:11px;letter-spacing:.18em}.quick{grid-template-columns:1fr 1fr;margin-top:34px}.nav{flex-wrap:wrap}.nav a{flex:1 1 calc(50% - 9px)}.teams{grid-template-columns:1fr}.versus{font-size:29px}.info-row{grid-template-columns:1fr 1fr}.head{align-items:flex-start}.updated{max-width:120px}.share{display:block}.actions{margin-top:14px}}
+
+/* Header coordinato alle card WhatsApp: logotipo trasparente, elementi separati e nessuna sovrapposizione. */
+.logo-wrap{height:auto;display:flex;flex-direction:column;justify-content:center;align-items:center;margin:0 auto 0;gap:0}
+.logo-crop{position:relative;width:min(470px,90vw);height:clamp(135px,36vw,174px);margin:0 auto;overflow:hidden}
+.logo-crop .logo{position:absolute;width:min(620px,126vw);height:auto;max-width:none;left:50%;top:calc(-1 * clamp(28px,3.7vw,48px));transform:translateX(-50%);filter:url(#logoWhite);mix-blend-mode:normal;opacity:1}
+.brand-padel{font-size:clamp(15px,2vw,23px);letter-spacing:.64em;padding-left:.64em;line-height:1.1;margin:12px 0 14px;font-weight:300;color:#fff}
+.brand-ball-row{display:flex;align-items:center;justify-content:center;gap:22px}
+.brand-line{display:block;width:clamp(58px,9vw,120px);height:3px;background:var(--yellow);box-shadow:0 0 10px rgba(255,212,0,.18)}
+.brand-ball-row .brand-ball{margin:0;flex:0 0 32px;width:32px;height:32px}
+.brand-city{display:block;letter-spacing:.34em;padding-left:.34em;font-size:clamp(11px,1.8vw,16px);margin:9px auto 0;font-weight:400;color:#fff}
+.brand-city:before,.brand-city:after{display:none}
+.header-kicker{margin:29px auto 0;letter-spacing:.28em;font-size:clamp(12px,1.65vw,18px);color:#f0f0f0}
+.challenge-title{margin:22px auto 0;font-size:clamp(43px,6.1vw,83px);line-height:1.05;letter-spacing:-.016em;max-width:1080px;text-wrap:balance}
+.challenge-title .lunch{font-family:'Permanent Marker','Segoe Script',cursive;font-size:1.03em;font-weight:400;line-height:1;text-transform:uppercase;transform:rotate(-4deg) translateY(-1px);vertical-align:middle;margin:0 .055em;color:var(--yellow)}
+.hero-sub{margin-top:22px;font-size:clamp(10px,1.5vw,15px)}
+.quick{margin-top:36px}
+@media(max-width:680px){
+ .logo-wrap{height:auto}
+ .brand-city{font-size:11px}
+ .challenge-title{font-size:clamp(40px,11vw,52px);line-height:1.05;margin-top:19px}
+ .challenge-title .lunch{font-size:1em}
+ .header-kicker{margin-top:24px}
+ .hero-sub{font-size:10px}
+ .quick{margin-top:28px}
+}
+
 </style>
 </head>
 <body>
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg"><defs><filter id="logoWhite" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -1 -1 -1 0 2.8"/></filter></defs></svg>
 <div class="shell">
 <header class="hero">
   <div class="racket left"></div><div class="racket right"></div>
@@ -73,9 +103,14 @@ opacity:.9;transform:rotate(-1deg)}
   <div class="scribble right">More Than<br>a Game</div>
   <div class="scribble bottom">Same Sport<br>Higher Mood</div>
   <div class="hero-inner">
-    <div class="logo-wrap"><img class="logo" src="sportup-logo.jpg" alt="Sport Up Padel"></div>
-    <div class="brand-city"><span class="brand-ball"></span>CASTEGNATO</div>
-    <div class="challenge-title">PADEL <span class="lunch">Lunch</span> CHALLENGE</div>
+    <div class="logo-wrap">
+      <div class="logo-crop"><img class="logo" src="sportup-logo.jpg" alt="Sport Up"></div>
+      <div class="brand-padel">PADEL</div>
+      <div class="brand-ball-row"><span class="brand-line"></span><span class="brand-ball"></span><span class="brand-line"></span></div>
+      <div class="brand-city">CASTEGNATO</div>
+    </div>
+    <div class="header-kicker">STAGIONE 2026</div>
+    <div class="challenge-title">PADEL <span class="lunch">LUNCH</span> CHALLENGE</div>
     <div class="hero-sub">Classifica ufficiale 2026</div>
     <div class="quick">
       <div class="stat"><span>Ultimo aggiornamento</span><strong>23 SET</strong></div>
