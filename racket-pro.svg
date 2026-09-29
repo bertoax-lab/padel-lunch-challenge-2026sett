@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 610" role="img" aria-label="Racchetta da padel nera e gialla">
+<defs>
+  <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#fff24a"/><stop offset=".22" stop-color="#ffd400"/>
+    <stop offset=".5" stop-color="#6e6500"/><stop offset=".72" stop-color="#ffd400"/><stop offset="1" stop-color="#fff36e"/>
+  </linearGradient>
+  <linearGradient id="face" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#2b2b2e"/><stop offset=".42" stop-color="#0d0d0f"/><stop offset=".75" stop-color="#232326"/><stop offset="1" stop-color="#050506"/>
+  </linearGradient>
+  <linearGradient id="throat" x1=".1" y1="0" x2=".9" y2="1">
+    <stop offset="0" stop-color="#0b0b0c"/><stop offset=".35" stop-color="#ffd400"/><stop offset=".55" stop-color="#3b3500"/><stop offset=".8" stop-color="#ffd400"/><stop offset="1" stop-color="#09090a"/>
+  </linearGradient>
+  <linearGradient id="grip" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#050505"/><stop offset=".32" stop-color="#2a2a2d"/><stop offset=".55" stop-color="#050505"/><stop offset=".82" stop-color="#242426"/><stop offset="1" stop-color="#030303"/>
+  </linearGradient>
+  <pattern id="carbon" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+    <rect width="14" height="14" fill="#141416"/>
+    <rect width="7" height="14" fill="#232326" opacity=".7"/>
+    <path d="M0 3H14M0 10H14" stroke="#343438" stroke-width="1" opacity=".35"/>
+  </pattern>
+  <radialGradient id="shine" cx=".28" cy=".16" r=".7">
+    <stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset=".45" stop-color="#fff" stop-opacity=".03"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="drop" x="-35%" y="-25%" width="170%" height="170%">
+    <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000" flood-opacity=".7"/>
+    <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#ffd400" flood-opacity=".14"/>
+  </filter>
+  <clipPath id="headclip"><path d="M210 16C99 16 31 91 31 196c0 111 51 216 146 273l33 20 33-20c95-57 146-162 146-273C389 91 321 16 210 16Z"/></clipPath>
+</defs>
+<g filter="url(#drop)">
+  <path d="M210 16C99 16 31 91 31 196c0 111 51 216 146 273l33 20 33-20c95-57 146-162 146-273C389 91 321 16 210 16Z"
+        fill="url(#rim)" stroke="#0b0b0d" stroke-width="12"/>
+  <path d="M210 35C111 35 51 101 51 197c0 101 47 195 132 247l27 16 27-16c85-52 132-146 132-247 0-96-60-162-159-162Z"
+        fill="url(#carbon)" stroke="#424247" stroke-width="4"/>
+  <path d="M210 42C116 42 59 105 59 198c0 94 44 182 124 233l27 17 27-17c80-51 124-139 124-233 0-93-57-156-151-156Z"
+        fill="url(#shine)" opacity=".9"/>
+  <g clip-path="url(#headclip)" fill="#020202" stroke="#ffd400" stroke-opacity=".7" stroke-width="2">
+    <circle cx="122" cy="103" r="11"/><circle cx="166" cy="86" r="11"/><circle cx="211" cy="79" r="11"/><circle cx="256" cy="87" r="11"/><circle cx="299" cy="105" r="11"/>
+    <circle cx="101" cy="145" r="11"/><circle cx="145" cy="134" r="11"/><circle cx="189" cy="127" r="11"/><circle cx="233" cy="128" r="11"/><circle cx="277" cy="137" r="11"/><circle cx="319" cy="151" r="11"/>
+    <circle cx="91" cy="190" r="11"/><circle cx="135" cy="178" r="11"/><circle cx="179" cy="173" r="11"/><circle cx="223" cy="174" r="11"/><circle cx="267" cy="180" r="11"/><circle cx="311" cy="193" r="11"/>
+    <circle cx="91" cy="236" r="11"/><circle cx="135" cy="224" r="11"/><circle cx="179" cy="219" r="11"/><circle cx="223" cy="220" r="11"/><circle cx="267" cy="226" r="11"/><circle cx="311" cy="239" r="11"/>
+    <circle cx="102" cy="280" r="11"/><circle cx="145" cy="269" r="11"/><circle cx="189" cy="264" r="11"/><circle cx="233" cy="265" r="11"/><circle cx="277" cy="274" r="11"/><circle cx="319" cy="288" r="11"/>
+    <circle cx="123" cy="322" r="11"/><circle cx="166" cy="309" r="11"/><circle cx="210" cy="305" r="11"/><circle cx="255" cy="311" r="11"/><circle cx="298" cy="328" r="11"/>
+    <circle cx="148" cy="362" r="11"/><circle cx="190" cy="350" r="11"/><circle cx="232" cy="352" r="11"/><circle cx="273" cy="366" r="11"/>
+  </g>
+  <path d="M88 314c28 54 61 92 103 121l19 13 20-13c41-28 75-66 102-120l-56 32-66 60-65-59Z" fill="#070708" opacity=".95"/>
+  <path d="M105 330l55 31 50 45 51-46 55-31-42 78-64 49-63-48Z" fill="url(#throat)" stroke="#111" stroke-width="5"/>
+  <path d="M145 363l42 20 23 23 24-23 41-20-31 55-34 25-33-25Z" fill="#050506" stroke="#ffd400" stroke-opacity=".6" stroke-width="3"/>
+  <rect x="177" y="434" width="66" height="132" rx="20" fill="url(#grip)" stroke="#0a0a0b" stroke-width="5"/>
+  <g stroke="#4a4a4d" stroke-width="4" opacity=".9">
+    <path d="M181 454l58 18"/><path d="M181 476l58 18"/><path d="M181 498l58 18"/><path d="M181 520l58 18"/><path d="M181 542l58 18"/>
+  </g>
+  <path d="M177 554h66v25c0 14-12 25-26 25h-14c-14 0-26-11-26-25Z" fill="#080809" stroke="#ffd400" stroke-width="4"/>
+  <path d="M52 173c26-73 82-119 158-119" fill="none" stroke="#fff" stroke-opacity=".14" stroke-width="6" stroke-linecap="round"/>
+  <path d="M328 328l-54 32" stroke="#ffd400" stroke-width="8" stroke-linecap="round"/>
+  <path d="M93 326l51 30" stroke="#ffd400" stroke-width="8" stroke-linecap="round"/>
+</g>
+</svg>
