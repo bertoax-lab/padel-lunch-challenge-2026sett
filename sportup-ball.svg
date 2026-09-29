@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Pallina da padel Sport Up">
+  <defs>
+    <radialGradient id="ball" cx="34%" cy="24%" r="78%">
+      <stop offset="0" stop-color="#f7ff5a"/>
+      <stop offset=".38" stop-color="#e8f51c"/>
+      <stop offset=".72" stop-color="#c8d900"/>
+      <stop offset="1" stop-color="#869200"/>
+    </radialGradient>
+    <radialGradient id="shine" cx="30%" cy="19%" r="42%">
+      <stop offset="0" stop-color="#fff" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="15" flood-color="#000" flood-opacity=".5"/>
+    </filter>
+    <filter id="felt" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".68" numOctaves="2" seed="17" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="gray"/>
+      <feComponentTransfer in="gray" result="grain">
+        <feFuncA type="table" tableValues="0 .12"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="grain" mode="overlay"/>
+    </filter>
+    <clipPath id="clip"><circle cx="256" cy="256" r="220"/></clipPath>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <circle cx="256" cy="256" r="220" fill="url(#ball)"/>
+    <circle cx="256" cy="256" r="219" fill="url(#shine)"/>
+    <g clip-path="url(#clip)" filter="url(#felt)">
+      <circle cx="256" cy="256" r="220" fill="transparent"/>
+    </g>
+
+    <path d="M50 174 C126 110, 190 102, 268 124 C354 148, 401 184, 466 178"
+          fill="none" stroke="#f3eed9" stroke-width="22" stroke-linecap="round"/>
+    <path d="M46 350 C127 414, 194 424, 273 400 C358 374, 405 333, 469 339"
+          fill="none" stroke="#f3eed9" stroke-width="22" stroke-linecap="round"/>
+
+    <path d="M52 180 C126 118, 191 112, 266 133 C352 156, 401 192, 461 185"
+          fill="none" stroke="#b4b19f" stroke-opacity=".38" stroke-width="5"/>
+    <path d="M51 344 C130 404, 194 414, 271 391 C355 366, 402 326, 462 333"
+          fill="none" stroke="#b4b19f" stroke-opacity=".38" stroke-width="5"/>
+
+    <g fill="#111" text-anchor="middle">
+      <text x="256" y="245" font-size="75" font-weight="800"
+            font-family="Brush Script MT, Segoe Script, cursive"
+            transform="rotate(-3 256 245)">SportUp</text>
+      <text x="256" y="292" font-size="28" letter-spacing="13"
+            font-family="Arial, Helvetica, sans-serif">PADEL</text>
+    </g>
+
+    <g transform="translate(222 314)" stroke="#111" stroke-width="8" fill="none">
+      <circle cx="34" cy="34" r="31"/>
+      <path d="M11 10 C25 20 25 47 11 58"/>
+      <path d="M57 10 C43 20 43 47 57 58"/>
+    </g>
+  </g>
+</svg>
