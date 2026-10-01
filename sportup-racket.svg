@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 760" role="img" aria-label="Racchetta da padel nera e gialla">
+  <defs>
+    <linearGradient id="edge" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff36a"/>
+      <stop offset=".25" stop-color="#ffd400"/>
+      <stop offset=".7" stop-color="#b99700"/>
+      <stop offset="1" stop-color="#ffea00"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#2d2f31"/>
+      <stop offset=".45" stop-color="#111214"/>
+      <stop offset="1" stop-color="#050506"/>
+    </linearGradient>
+    <pattern id="carbon" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+      <rect width="12" height="12" fill="transparent"/>
+      <rect width="6" height="12" fill="#ffffff" opacity=".035"/>
+    </pattern>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#000" flood-opacity=".62"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M210 28 C92 28 30 112 30 236 C30 350 91 429 155 466 L148 522 H272 L265 466 C329 429 390 350 390 236 C390 112 328 28 210 28Z" fill="url(#edge)"/>
+    <path d="M210 43 C102 43 46 119 46 236 C46 338 99 411 162 445 L172 466 H248 L258 445 C321 411 374 338 374 236 C374 119 318 43 210 43Z" fill="url(#face)"/>
+    <path d="M210 43 C102 43 46 119 46 236 C46 338 99 411 162 445 L172 466 H248 L258 445 C321 411 374 338 374 236 C374 119 318 43 210 43Z" fill="url(#carbon)"/>
+    <path d="M73 331 L131 371 L102 410" fill="none" stroke="#ffd400" stroke-width="9" stroke-linecap="round"/>
+    <path d="M347 321 L290 365 L320 406" fill="none" stroke="#ffd400" stroke-width="9" stroke-linecap="round"/>
+    <g fill="#020202" stroke="#ffd400" stroke-width="2">
+      <circle cx="145" cy="126" r="14"/><circle cx="190" cy="107" r="14"/><circle cx="235" cy="107" r="14"/><circle cx="280" cy="126" r="14"/>
+      <circle cx="115" cy="165" r="14"/><circle cx="165" cy="157" r="14"/><circle cx="215" cy="151" r="14"/><circle cx="265" cy="157" r="14"/><circle cx="315" cy="165" r="14"/>
+      <circle cx="95" cy="212" r="14"/><circle cx="145" cy="205" r="14"/><circle cx="195" cy="198" r="14"/><circle cx="245" cy="198" r="14"/><circle cx="295" cy="205" r="14"/><circle cx="335" cy="212" r="14"/>
+      <circle cx="90" cy="261" r="14"/><circle cx="140" cy="254" r="14"/><circle cx="190" cy="248" r="14"/><circle cx="240" cy="248" r="14"/><circle cx="290" cy="254" r="14"/><circle cx="340" cy="261" r="14"/>
+      <circle cx="105" cy="310" r="14"/><circle cx="155" cy="303" r="14"/><circle cx="205" cy="296" r="14"/><circle cx="255" cy="303" r="14"/><circle cx="305" cy="310" r="14"/>
+      <circle cx="135" cy="355" r="14"/><circle cx="185" cy="348" r="14"/><circle cx="235" cy="348" r="14"/><circle cx="285" cy="355" r="14"/>
+    </g>
+    <path d="M165 458 L255 458 L273 500 L248 533 H172 L147 500 Z" fill="#0c0d0e" stroke="#ffd400" stroke-width="8"/>
+    <rect x="162" y="520" width="96" height="198" rx="28" fill="#111214"/>
+    <g stroke="#34363a" stroke-width="7"><line x1="171" y1="548" x2="249" y2="548"/><line x1="171" y1="576" x2="249" y2="576"/><line x1="171" y1="604" x2="249" y2="604"/><line x1="171" y1="632" x2="249" y2="632"/><line x1="171" y1="660" x2="249" y2="660"/></g>
+    <path d="M168 702 L252 702 L244 725 H176 Z" fill="#ffd400"/>
+  </g>
+</svg>
