@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<rect width="1080" height="1350" fill="#050505"/>
+<circle cx="930" cy="180" r="260" fill="#ffd400" opacity=".08"/>
+<circle cx="120" cy="1180" r="220" fill="#ffd400" opacity=".06"/>
+<text x="70" y="100" fill="#ffd400" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="800" letter-spacing="4">SPORT UP • PADEL LUNCH CHALLENGE 2026</text>
+<text x="70" y="190" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="54" font-weight="900">15 OTTOBRE 2026</text>
+<text x="70" y="320" fill="#ffd400" font-family="Arial,Helvetica,sans-serif" font-size="74" font-weight="900">BERTOLINI / VARZÈ</text>
+<text x="70" y="405" fill="#999999" font-family="Arial,Helvetica,sans-serif" font-size="36" font-weight="800">VS</text>
+<text x="70" y="500" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="70" font-weight="900">BREDA / NEGRI</text>
+<rect x="70" y="575" width="940" height="210" rx="32" fill="#111111" stroke="#ffd400" stroke-width="3"/>
+<text x="540" y="665" text-anchor="middle" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="88" font-weight="900">7-6   6-4   5-7</text>
+<text x="540" y="735" text-anchor="middle" fill="#ffd400" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="800" letter-spacing="2">VINCONO BERTOLINI / VARZÈ</text>
+<text x="70" y="900" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">Due set che pesano.</text>
+<text x="70" y="955" fill="#bdbdbd" font-family="Arial,Helvetica,sans-serif" font-size="28">Tie-break e 6-4 decidono il match.</text>
+<text x="70" y="1000" fill="#bdbdbd" font-family="Arial,Helvetica,sans-serif" font-size="28">Breda e Negri reagiscono nel terzo, chiuso 7-5.</text>
+<text x="70" y="1115" fill="#ffd400" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="800">PERFORMANCE V2: 63,3 • 36,7</text>
+<text x="70" y="1210" fill="#777777" font-family="Arial,Helvetica,sans-serif" font-size="24">Sport Up Padel • Castegnato</text>
+</svg>
